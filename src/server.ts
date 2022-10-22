@@ -12,4 +12,4 @@ app.use(routes);
 
 // https://dev.to/rogeriorioli/iniciando-um-projeto-nodejs-express-com-typescript-4bfl
 
-app.listen(3002);
+app.listen(3003);
