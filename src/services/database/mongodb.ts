@@ -7,9 +7,11 @@ type DatabaseConnect = {
 
 // let uri = process.env.MONGODB_URI || "";
 // let dbName = process.env.MONGODB_DB;
+// J1x6HsA8O3htmkC8
+// mongodb+srv://pi_user:<password>@cluster0.eyy6ldk.mongodb.net/?retryWrites=true&w=majority
 
-let uri = 'mongodb+srv://pi_user:paNb2g9x6lCKNEKG@cluster0.bosi2.mongodb.net/';
-let dbName = 'theguardian';
+let uri = 'mongodb+srv://pi_user:J1x6HsA8O3htmkC8@cluster0.eyy6ldk.mongodb.net/';
+let dbName = 'pandemicmonitor';
 
 let cachedClient: any = null;
 let cachedDb: any = null;
