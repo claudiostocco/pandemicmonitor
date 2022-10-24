@@ -17,11 +17,11 @@ indicatorsRouter.get('/', async (req, res) => {
     return res.status(500).json({
         success: false,
         searched: null,
-        error: 'Collection places list shearching error',
+        error: 'Indicators list shearching error',
     });
 });
 
-indicatorsRouter.get('/:date', async (req, res) => {
+indicatorsRouter.get('date/:date', async (req, res) => {
     if (req.params.date) {
         const searched = await find('indicators', { _id: new ObjectId(req.params.date) });
         return res.status(searched?.success ? 200 : 500).json(searched);
