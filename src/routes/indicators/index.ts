@@ -23,7 +23,7 @@ indicatorsRouter.get('/', async (req, res) => {
 
 indicatorsRouter.get('date/:date', async (req, res) => {
     if (req.params.date) {
-        const searched = await find('indicators', { _id: new ObjectId(req.params.date) });
+        const searched = await find('indicators', { date: req.params.date });
         return res.status(searched?.success ? 200 : 500).json(searched);
     }
     return res.status(200).json({
